@@ -73,6 +73,6 @@ function filter_accordion_impl($text) {
         }
     }
     
-    return '<div id="accordion-'.(empty($title) ? rand(100,999) : $title).'" class="accordion-tool"><a href="#" class="accordion-trigger" onclick="return false;" title="'.$title.'">'.$title.'</a><div id="accordion-content" class="accordion-content" style="display:none;">'.$content.'</div></div>';
+    return '<div class="accordion-tool"><a href="#" class="accordion-trigger" onclick="return false;"><i class="fa fa-caret-right"></i> '.$title.'</a><div id="accordion-content" class="accordion-content">'.$content.'</div></div>';
 }
 ?>
